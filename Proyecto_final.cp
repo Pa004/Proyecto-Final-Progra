@@ -118,7 +118,7 @@ int opcion;
  srand(time(NULL));
   x->cod_matricula = 1 + rand() % (101 - 1);
   x->pagado = 35;
-  printf("Ingrese la cedula del niño: ");
+  printf("Ingrese la cedula del niÃ±o: ");
   do {
     scanf("%ld", &x->datos_nino.cedula);
     fflush(stdin);
@@ -145,12 +145,12 @@ while(!validar_nombre(x->datos_nino.nombre)) {
     x->datos_nino.nombre[strcspn(x->datos_nino.nombre, "\n")] = '\0';
 }
   fflush(stdin);
-  printf("Ingrese la edad del niño: ");
+  printf("Ingrese la edad del niÃ±o: ");
   do {
     scanf("%d", &x->datos_nino.edad);
     fflush(stdin);
     if (x->datos_nino.edad < 7 || x->datos_nino.edad > 18) {
-      printf("Edad inválida. Ingrese nuevamente: ");
+      printf("Edad invÃ¡lida. Ingrese nuevamente: ");
     }
   } while (x->datos_nino.edad < 7 || x->datos_nino.edad > 18);
   fflush(stdin);
@@ -185,7 +185,7 @@ while(!validar_nombre(x->datos_representante.nombre)) {
     scanf("%d", &x->datos_representante.edad);
     fflush(stdin);
     if (x->datos_representante.edad < 18 || x->datos_representante.edad > 85) {
-      printf("Edad inválida. Ingrese nuevamente: ");
+      printf("Edad invÃ¡lida. Ingrese nuevamente: ");
     }
   } while (x->datos_representante.edad < 18 || x->datos_representante.edad > 85);
   fflush(stdin);
@@ -317,13 +317,13 @@ l=opcion;
 void imprimir(Club_Vacacional x) {
   printf("Codigo matricula:%d \n ", x.cod_matricula);
 	printf("Valor pagado:%d \n ", x.pagado);
-  printf("cedula del niño:%ld \n ", x.datos_nino.cedula);
-  printf("Nombre del niño:%s \n ", x.datos_nino.nombre);
-  printf("Edad del niño:%d \n ", x.datos_nino.edad);
-  printf("cedula del niño:%ld \n ", x.datos_representante.cedula);
-  printf("Nombre del niño:%s \n ", x.datos_representante.nombre);
-  printf("Edad del niño:%d \n ", x.datos_representante.edad);
-  printf("Correo del niño:%s \n ", x.datos_representante.correo);
+  printf("cedula del niÃ±o:%ld \n ", x.datos_nino.cedula);
+  printf("Nombre del niÃ±o:%s \n ", x.datos_nino.nombre);
+  printf("Edad del niÃ±o:%d \n ", x.datos_nino.edad);
+  printf("cedula del niÃ±o:%ld \n ", x.datos_representante.cedula);
+  printf("Nombre del niÃ±o:%s \n ", x.datos_representante.nombre);
+  printf("Edad del niÃ±o:%d \n ", x.datos_representante.edad);
+  printf("Correo del niÃ±o:%s \n ", x.datos_representante.correo);
   printf("Club:%s \n ", x.datos_club.nombre);
   printf("Profesor:%s \n ", x.datos_club.profesor);
  
@@ -388,7 +388,7 @@ while(!validar_nombre(x->datos_nino.nombre)) {
     scanf("%d", &x->datos_nino.edad);
     fflush(stdin);
     if (x->datos_nino.edad < 7 || x->datos_nino.edad > 18) {
-      printf("Edad inválida. Ingrese nuevamente: ");
+      printf("Edad invÃ¡lida. Ingrese nuevamente: ");
     }
   } while (x->datos_nino.edad < 7 || x->datos_nino.edad > 18);
   fflush(stdin);
@@ -458,7 +458,7 @@ while(!validar_nombre(x->datos_nino.nombre)) {
     scanf("%d", &x->datos_representante.edad);
     fflush(stdin);
     if (x->datos_representante.edad < 18 || x->datos_representante.edad > 25) {
-      printf("Edad inválida. Ingrese nuevamente: ");
+      printf("Edad invÃ¡lida. Ingrese nuevamente: ");
     }
   } while (x->datos_representante.edad < 18 || x->datos_representante.edad > 25);
   fflush(stdin);
@@ -700,9 +700,9 @@ int o;
       printf("Nino Encontrado:\n");
       printf("%d",a[i].datos_nino.cedula);
   printf("Codigo matricula:%d \n ", a[i].cod_matricula);
-  printf("cedula del niño:%ld \n ", a[i].datos_nino.cedula);
-  printf("Nombre del niño:%s \n ", a[i].datos_nino.nombre);
-  printf("Edad del niño:%d \n ", a[i].datos_nino.edad);
+  printf("cedula del niÃ±o:%ld \n ", a[i].datos_nino.cedula);
+  printf("Nombre del niÃ±o:%s \n ", a[i].datos_nino.nombre);
+  printf("Edad del niÃ±o:%d \n ", a[i].datos_nino.edad);
       bool encontrado = true;
   }
 }
